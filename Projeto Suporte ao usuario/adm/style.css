@@ -1,0 +1,124 @@
+body {
+    height: 100vh;
+}
+
+#adm{
+    transition: color 0.3s;
+    display: inline-block;
+}
+#botao {
+    cursor: pointer;
+    background-color: #2e5156;
+    transition: background-color 0.2s;
+    border: 2px solid #2e5156; /* Adiciona uma borda de 1 pixel, cor #2e5156 */
+    color: #fff; /* Adiciona uma cor ao texto para contrastar com a cor de fundo */
+}
+
+#botao:hover {
+    background-color: #fff;
+    color: #2e5156;
+}
+
+#botao2{
+    cursor: pointer;
+    background-color: #2e5156;
+    transition: background-color 0.2s;
+    border: 2px solid #2e5156; /* Adiciona uma borda de 1 pixel, cor #2e5156 */
+    color: #fff; /* Adiciona uma cor ao texto para contrastar com a cor de fundo */
+    padding: 4px 14px; 
+    border-radius: 5px;
+} 
+
+#botao2:hover {
+    background-color: #fafafa;
+    color: #2e5156;
+}
+
+#botao_pesquisa{
+    padding: 3px 15px; 
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #00f7ff8a;
+    transition: background-color 0.3s;
+    color: #fff; /* Adiciona uma cor ao texto para contrastar com a cor de fundo */
+}
+#botao_pesquisa:hover{
+    background-color: #00fca898;
+    color: #fff;
+}
+.card {
+    overflow: hidden; /* Garante que o efeito de zoom não ultrapasse os limites do card */
+}
+
+.img-hover {
+    transition: transform ease 0.5s;
+}
+
+.img-hover:hover {
+    transform: scale(1.1); /* Ajuste o valor conforme necessário para o zoom desejado */
+}
+.btnadm {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnadm:hover {
+    background-color: darkred;
+}
+
+.btneditar {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btneditar:hover {
+    background-color: royalblue;
+}
+
+.btnexcluir {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnexcluir:hover {
+    background-color: #c9302c;
+}
+
+.btnadm,
+.btneditar,
+.btnexcluir {
+    font-size: 14px; /* Reduzindo o tamanho da fonte */
+    padding: 8px 16px; /* Reduzindo o padding */
+    border-radius: 4px; /* Ajustando o raio da borda */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnadm:hover {
+    background-color: darkred;
+}
+
+.btneditar:hover {
+    background-color: royalblue;
+}
+
+.btnexcluir:hover {
+    background-color: #c9302c;
+}
+

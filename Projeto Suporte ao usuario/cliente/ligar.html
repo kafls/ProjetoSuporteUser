@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>Situação problema :: Página Trabalhe Conosco</title>
+</head>
+
+<style>
+    .company-phone {
+      border: 1px solid #7b3fff;
+      border-radius: 5px;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="d-flex flex-column" style="min-height: 100vh;">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow border-bottom border-opacity-50 border-2" style="background-color: black;">
+  <div class="container">
+      <img src="img.png" width="240px" >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #FFF;" aria-current="page" href="index.html">Quem somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #FFF;" aria-current="page" href="/">Carreira</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #FFF;" aria-current="page" href="#">Contato</a>
+        </li>
+      </ul>
+      <form action="/busca" role="search" method="post">
+          <div class="input-group">
+            <input class="form-control me-2" type="search" placeholder="Buscar" id="Buscar" name="Buscar" aria-label="Search">
+            <button class="btn btn" type="submit" id="botao_pesquisa" style="background-color: #7b3fff;">Buscar</button>
+          </div>
+        </form>
+        
+    </div>
+  </div>
+</nav>
+<!--Fim da Nav-->
+<main class="flex-fill">
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="company-phone">
+        <h4>Entre em Contato</h4>
+        <p>Telefone: <strong>(11) 555-1234</strong></p>
+        <p>Horário de Funcionamento: Seg-Sex, 9:00 - 18:00</p>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<!-- Footer -->
+    
+<footer class="border-top shadow mt-4 border-3 border-dark border-opacity-25 text-white" style="background-color: black" >
+    <div class="container p-2">
+        <div class="row">
+            <div class="col-12 col-md-4 text-center">
+                <p>© 2023 Empresa Solucions</p>
+                <p>Endereço: Rua das Tecnologias, 123 - Cidade das Delícias</p>
+            </div>
+
+            <div class="col-12 col-md-4 text-center">
+                <p><a href="#" style="text-decoration: none; color: #FFF">Política de Privacidade</a> | <a href="#" style="text-decoration: none; color: #fff">Termos de Serviço</a></p>
+            </div>
+
+            <div class="col-12 col-md-4 text-center">
+                <p>Telefone: (11) 555-1234</p>
+                <p>Email: Solucions2024@gmail.com.br</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

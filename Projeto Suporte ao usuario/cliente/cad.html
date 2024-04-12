@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>Situação problema :: Página Trabalhe Conosco</title>
+</head>
+
+<body class="d-flex flex-column" style="min-height: 100vh;">
+
+<!-- NavBAr -->
+<nav class="navbar navbar-expand-lg shadow border-bottom border-opacity-50 border-2" style="background-color: black;">
+  <div class="container">
+      <img src="img.png" width="240px" >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #FFF;" aria-current="page" href="index.html">Quem somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #FFF;" aria-current="page" href="/">Carreira</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #FFF;" aria-current="page" href="#">Contato</a>
+        </li>
+      </ul>
+      <form action="/busca" role="search" method="post">
+          <div class="input-group">
+            <input class="form-control me-2" type="search" placeholder="Buscar" id="Buscar" name="Buscar" aria-label="Search">
+            <button class="btn btn" type="submit" id="botao_pesquisa" style="background-color: #7b3fff;">Buscar</button>
+          </div>
+        </form>
+        
+    </div>
+  </div>
+</nav>
+<!-- Fim NavBar -->
+<main class="flex-fill">
+  <div class="container mt-5">
+    <h1 class="mb-5 display-5 text-center">Cadastre seu problema, por favor</h1>
+    <div class="row justify-content-center">
+
+      <form method="post" id="formulario" class="text-center col-10 col-md-8 col-lg-6 needs-validation" onsubmit="enviarDados(event)" novalidate>
+        
+        <div class="form-floating mb-3">
+          <input type="text" name="usuario" id="usuario" class="form-control" placeholder="" autofocus required />
+          <label for="usuario">Usuário</label>
+          <div class="invalid-feedback"> Você deve informar o nome do usuário</div>
+        </div>
+        
+        <div class="form-floating mb-3">
+          <input type="number" name="CPF" id="cpf" class="form-control" placeholder="" autofocus required />
+          <label for="cpf">CPF</label>
+          <div class="invalid-feedback"> Você deve informar o CPF</div>
+        </div>
+
+        <div class="form-floating mb-2">
+          <input type="text" name="Descricao" id="desc" class="form-control" placeholder="" required />
+          <label for="Descricao">Descrição do problema</label>
+          <div class="invalid-feedback">
+            Você deve descrever o seu problema
+          </div>
+        </div>
+        
+        <div class="form-floating mb-2">
+          <input type="text" name="setor" id="setor" class="form-control" placeholder="" required />
+          <label for="Descricao">Setor</label>
+          <div class="invalid-feedback">
+            Você deve descrever o seu setor
+          </div>
+        </div>
+        <div class="form-check-label text-danger text-center">
+          <p></p>
+        </div>
+
+        <input type="submit" value="ENVIAR" name="ENVIAR" class="btn btn-outline-secondary"/>
+
+      </form>
+    </div>
+  </div>
+</main>
+  <!-- Footer -->
+    
+  <footer class="border-top shadow mt-5 border-3 border-dark border-opacity-25 text-white" style="background-color: black" >
+    <div class="container p-2">
+        <div class="row">
+            <div class="col-12 col-md-4 text-center">
+                <p>© 2023 Empresa Solucions</p>
+                <p>Endereço: Rua das Tecnologias, 123 - Cidade das Delícias</p>
+            </div>
+
+            <div class="col-12 col-md-4 text-center">
+                <p><a href="#" style="text-decoration: none; color: #FFF">Política de Privacidade</a> | <a href="#" style="text-decoration: none; color: #fff">Termos de Serviço</a></p>
+            </div>
+
+            <div class="col-12 col-md-4 text-center">
+                <p>Telefone: (11) 555-1234</p>
+                <p>Email: Solucions2024@gmail.com.br</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
