@@ -1,0 +1,149 @@
+body {
+    height: 100vh;
+}
+
+#adm{
+    transition: color 0.3s;
+    display: inline-block;
+}
+#botao {
+    cursor: pointer;
+    background-color: #2e5156;
+    transition: background-color 0.2s;
+    border: 2px solid #2e5156; /* Adiciona uma borda de 1 pixel, cor #2e5156 */
+    color: #fff; /* Adiciona uma cor ao texto para contrastar com a cor de fundo */
+}
+
+#botao:hover {
+    background-color: #fff;
+    color: #2e5156;
+}
+
+#botao2{
+    cursor: pointer;
+    background-color: #2e5156;
+    transition: background-color 0.2s;
+    border: 2px solid #2e5156; /* Adiciona uma borda de 1 pixel, cor #2e5156 */
+    color: #fff; /* Adiciona uma cor ao texto para contrastar com a cor de fundo */
+    padding: 4px 14px; 
+    border-radius: 5px;
+} 
+
+#botao2:hover {
+    background-color: #fafafa;
+    color: #2e5156;
+}
+
+#botao_pesquisa{
+    padding: 3px 15px; 
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #00f7ff8a;
+    transition: background-color 0.3s;
+    color: #fff; /* Adiciona uma cor ao texto para contrastar com a cor de fundo */
+}
+#botao_pesquisa:hover{
+    background-color: #00fca898;
+    color: #fff;
+}
+.card {
+    overflow: hidden; /* Garante que o efeito de zoom não ultrapasse os limites do card */
+}
+
+.img-hover {
+    transition: transform ease 0.5s;
+}
+
+.img-hover:hover {
+    transform: scale(1.1); /* Ajuste o valor conforme necessário para o zoom desejado */
+}
+.btnadm {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnadm:hover {
+    background-color: darkred;
+}
+
+.btneditar {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btneditar:hover {
+    background-color: royalblue;
+}
+
+.btnexcluir {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnexcluir:hover {
+    background-color: #c9302c;
+}
+
+.btnadm,
+.btneditar,
+.btnexcluir {
+    font-size: 14px; /* Reduzindo o tamanho da fonte */
+    padding: 8px 16px; /* Reduzindo o padding */
+    border-radius: 4px; /* Ajustando o raio da borda */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnadm:hover {
+    background-color: darkred;
+}
+
+.btneditar:hover {
+    background-color: royalblue;
+}
+
+.btnexcluir:hover {
+    background-color: #c9302c;
+}
+
+/* Estilo para o conteúdo */
+.content {
+    position: relative; /* Para que a posição absoluta da caixa seja relativa a este elemento */
+    z-index: 2; /* Coloque este conteúdo acima da imagem de fundo */
+  }
+
+  /* Estilo para a caixa (box) */
+
+  
+  /* Estilo para o footer */
+  footer {
+    position: relative; /* Mantenha o footer no fluxo do documento */
+    z-index: 2; /* Coloque o footer acima da imagem de fundo */
+  }
+  
+  /* Estilo para a imagem de fundo */
+  .background-image {
+    position: relative; /* Posicionamento fixo para cobrir todo o fundo */
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-image: url('fundo.png');
+    background-size: cover;
+    z-index: 1; /* Coloque a imagem de fundo abaixo de todo o conteúdo */
+  }
